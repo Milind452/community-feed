@@ -7,4 +7,11 @@ const QuestionsContainer = styled.div`
     margin: 5%;
 `;
 
-export { QuestionsContainer };
+const QuestionDetailContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5%;
+`;
+
+export { QuestionsContainer, QuestionDetailContainer };
