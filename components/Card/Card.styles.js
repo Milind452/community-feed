@@ -13,7 +13,7 @@ const Title = styled.h2`
     padding-bottom: 10px;
     text-align: center;
     color: black;
-    padding-bottom: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
 `;
 
 const Count = styled.span`
