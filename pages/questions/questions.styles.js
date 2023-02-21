@@ -7,6 +7,10 @@ const QuestionsContainer = styled.div`
     margin: 5%;
 `;
 
+const CardLink = styled.a`
+    text-decoration: none;
+`;
+
 const QuestionDetailContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -14,4 +18,4 @@ const QuestionDetailContainer = styled.div`
     margin: 5%;
 `;
 
-export { QuestionsContainer, QuestionDetailContainer };
+export { QuestionsContainer, QuestionDetailContainer, CardLink };

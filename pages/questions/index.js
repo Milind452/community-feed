@@ -1,7 +1,8 @@
-import { QuestionsContainer } from "./questions.styles";
+import { QuestionsContainer, CardLink } from "./questions.styles";
 import Card from "../../components/Card/Card";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Questions() {
     const [loading, setLoading] = useState(false);
@@ -30,12 +31,19 @@ export default function Questions() {
             ) : (
                 <div>
                     {questions.map((question) => (
-                        <Card
+                        <Link
                             key={question.question_id}
-                            title={question.title}
-                            views={question.view_count}
-                            answers={question.answer_count}
-                        />
+                            href={`/questions/${question.question_id}`}
+                            passHref
+                        >
+                            <CardLink>
+                                <Card
+                                    title={question.title}
+                                    views={question.view_count}
+                                    answers={question.answer_count}
+                                />
+                            </CardLink>
+                        </Link>
                     ))}
                 </div>
             )}
