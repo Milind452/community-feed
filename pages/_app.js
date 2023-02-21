@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
+import Header from "../components/Header/Header";
+
 const GlobalStyle = createGlobalStyle`
     body{
         padding: 0;
@@ -17,6 +19,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <GlobalStyle />
+            <Header />
             <Component {...pageProps} />;
         </>
     );
