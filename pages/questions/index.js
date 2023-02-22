@@ -24,7 +24,7 @@ export default function Questions() {
             const result = await data.json();
             if (result) {
                 setQuestions(result.items);
-                setHasMore(result.hasMore);
+                setHasMore(result.has_more);
                 setLoading(false);
             }
         }
